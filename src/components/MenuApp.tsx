@@ -16,7 +16,7 @@ const MenuApp = ({menuList} : Props) => {
             const listkey = Object.keys(lista)
             return listkey.map((key, index) => {
                 return (
-                    <li key={index}>{key} {Array.isArray(lista[key]) && lista[key].length > 0 ? <ItemList children={lista[key]} />: ''}
+                    <li key={index}><a href="#">{key}</a> {Array.isArray(lista[key]) && lista[key].length > 0 ? <ItemList children={lista[key]} />: ''}
                     </li>
                 )
             })
@@ -25,7 +25,7 @@ const MenuApp = ({menuList} : Props) => {
 
         return (
             <nav>
-                <ul className="menus">
+                <ul className="NavMenu">
                     {renderList()}
                 </ul>
             </nav>

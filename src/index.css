@@ -98,3 +98,63 @@ footer:after {
   content: "";
   clear: both;
 }
+
+/***Menu***/
+
+ul.NavMenu {
+  padding:0px;
+  margin:0px;
+  width:420px;
+  list-style:none;
+  position:relative
+}
+
+ul.NavMenu ul {
+  position:absolute;
+  left:0;
+  top:100%;
+  display:none;
+  padding:0px;
+  margin:0px
+}
+
+ul.NavMenu li {
+  display:inline;
+  float:left;
+  position:relative
+}
+
+ul.NavMenu a {
+  text-decoration:none;
+  padding:10px 0px;
+  width:100px;
+background: #fff;
+color: #6f6f6f;
+  float:left;
+  text-align:center;
+  border:1px solid #ffffff;
+}
+
+ul.NavMenu a:hover {
+background: #fff;
+color: #6f6f6f;
+border-bottom: 3px solid#1747a2;
+}
+
+/***2nd level menu***/
+
+ul.NavMenu li:hover ul {
+  display:block;
+}
+
+ul.NavMenu ul a {
+  width:120px;
+  text-align: left;
+}
+
+ul.NavMenu ul li {
+  padding: 0px 10px;
+  display:block;
+  margin:0px;
+  border: 1px solid #6f6f6f;
+}
